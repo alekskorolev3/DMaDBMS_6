@@ -1,0 +1,10 @@
+BEGIN
+FOR v_LoopCounter IN 1..10000 LOOP
+        INSERT INTO MYTABLE (VAL) 
+            VALUES (DBMS_RANDOM.VALUE(1,10));
+END LOOP;
+COMMIT;
+END;
+
+
+    
